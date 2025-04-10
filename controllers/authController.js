@@ -3,6 +3,7 @@ const { generarJWT } = require("../helpers/jwt");
 const User = require("../models/UserModel");
 const bcryptjs = require("bcryptjs");
 
+
 const crearUsuario = async (req, res = response) => {
   try {
     const {  email, password } = req.body;
